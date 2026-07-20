@@ -1,146 +1,219 @@
-# Vettry E-bikes - Premium Ozotec Electric Vehicles Website
+# TaskFlow - Modern To-Do List Application
 
-## 🚀 Overview
+## 🎯 Overview
 
-A world-class premium responsive website for Vettry E-bikes, an authorized Ozotec electric vehicle showroom. Built with modern luxury automotive design inspiration from Tesla, Porsche, BMW, Rivian, and Apple.
+TaskFlow is a modern, responsive to-do list application built with vanilla JavaScript, CSS3, and HTML5. It features local storage functionality, allowing users to persist their tasks across browser sessions.
 
 ## ✨ Features
 
-### Design
-- **Modern Luxury Aesthetic** - Glassmorphism, gradient backgrounds, and premium UI
-- **Dark Premium UI** - Matte black (#0A0A0A) with Emerald green accents (#00D26A)
-- **Responsive Design** - Optimized for Desktop, Tablet, and Mobile
-- **Premium Typography** - Poppins and Sora fonts for elegant readability
+### Core Functionality
+- ✅ **Create Tasks** - Add new tasks with ease
+- ✅ **Complete Tasks** - Mark tasks as done with a single click
+- ✅ **Delete Tasks** - Remove individual tasks
+- ✅ **Filter Tasks** - View all, active, or completed tasks
+- ✅ **Clear Completed** - Bulk delete all completed tasks
+- ✅ **Search Tasks** - Find tasks quickly (in code)
+- ✅ **Task Statistics** - See total, completed, and pending task counts
 
-### Animations & Interactions
-- **GSAP Animations** - Smooth scroll reveals and parallax effects
-- **Framer Motion Ready** - Structured for advanced animations
-- **3D Hover Effects** - Interactive card animations
-- **Loading Animation** - Premium loader experience
-- **Mouse Parallax** - Dynamic floating elements that respond to cursor movement
-- **Smooth Scrolling** - Elegant page transitions
+### Storage & Persistence
+- 💾 **Local Storage** - All tasks saved to browser's local storage
+- 🔄 **Automatic Sync** - Changes saved instantly
+- 📊 **Data Export** - Export tasks as JSON (in code)
+- 📥 **Data Import** - Import tasks from JSON (in code)
 
-### Sections
-1. **Hero Section** - Full-screen premium hero with electric energy effects
-2. **About Section** - Vettry E-bikes story and mission
-3. **Models Section** - Premium product cards with specifications
-4. **Gallery Section** - Masonry gallery with hover animations
-5. **Test Ride Section** - Contact form for booking test rides
-6. **Contact Section** - Location, phone, email, and embedded Google Map
-7. **Floating Buttons** - WhatsApp, Call, and Back to Top
-8. **Footer** - Quick links and company information
+### User Experience
+- 🌓 **Dark Mode** - Toggle between light and dark themes
+- 🎨 **Modern Design** - Clean, intuitive interface
+- 📱 **Fully Responsive** - Works on desktop, tablet, and mobile
+- ⌨️ **Keyboard Shortcuts**:
+  - `Ctrl/Cmd + Enter` - Add task
+  - `Escape` - Blur input
+- 🔔 **Toast Notifications** - Instant feedback for actions
+- ✨ **Smooth Animations** - Beautiful transitions and effects
 
-### Product Models
-- **Flio Pro V2** - 1.2kW, 1.5kWh Graphene Battery, 50-55km range
-- **Flio Max** - 2.2kW, 3kWh LFP Battery, 120-130km range
-- **Flio Neo** - 2.2kW, 6kWh LFP Battery, 240-250km range
-- **Bheem** - 3kW, 4kWh LFP Battery, 140-150km range
-- **Bheem Lite** - 3kW, 2kWh LFP Battery, 80-90km range
+### Task Properties
+- 📝 **Task Text** - Main task description
+- 🏷️ **Priority Levels** - High, Medium, Low (default: Medium)
+- 📅 **Creation Date** - Auto-tracked with relative formatting
+- ✔️ **Completion Status** - Mark tasks as complete
+- ⏰ **Completion Timestamp** - Track when tasks were completed
 
-## 🎨 Color Palette
-
-- **Matte Black** - #0A0A0A (Primary background)
-- **Emerald Green** - #00D26A (Accent/Highlights)
-- **White** - #FFFFFF (Text)
-- **Dark Grey** - #1A1A1A (Secondary background)
-
-## 📱 Responsive Breakpoints
-
-- **Desktop** - 1024px and above
-- **Tablet** - 768px to 1023px
-- **Mobile** - Below 768px
-
-## 🔧 Technology Stack
-
-- **HTML5** - Semantic markup
-- **CSS3** - Modern styling with flexbox, grid, and animations
-- **JavaScript (Vanilla)** - Interactive features
-- **GSAP 3** - Advanced animations and scroll triggers
-- **Google Fonts** - Premium typography (Poppins, Sora)
-
-## 📁 File Structure
+## 🏗️ Project Structure
 
 ```
-vettry-ebikes/
-├── index.html           # Main HTML file
-├── manifest.json        # PWA manifest
-├── styles/
-│   └── main.css        # All styling and animations
+taskflow/
+├── index.html              # Main HTML file
+├── manifest.json           # PWA manifest
+├── css/
+│   └── styles.css         # Complete styling and animations
 ├── js/
-│   ├── main.js         # Core functionality
-│   ├── animations.js   # GSAP animations
-│   └── data.js         # Product and gallery data
-└── README.md           # This file
+│   ├── app.js             # Main application logic
+│   ├── storage.js         # Local storage management
+│   ├── ui.js              # UI rendering and DOM operations
+├── README.md              # Documentation
+└── .gitignore             # Git configuration
 ```
+
+## 🎨 Design Features
+
+### Color Palette
+- **Primary**: #6366F1 (Indigo)
+- **Secondary**: #EC4899 (Pink)
+- **Success**: #10B981 (Green)
+- **Danger**: #EF4444 (Red)
+- **Warning**: #F59E0B (Amber)
+- **Info**: #3B82F6 (Blue)
+
+### Typography
+- **Font Family**: Inter (main), Poppins (headings)
+- **Font Weights**: 300-700
+- **Sizes**: Responsive and scalable
+
+### Components
+- Modern card-based design
+- Smooth hover effects
+- Glassmorphism elements (background blobs)
+- Animated transitions
+- Gradient text and buttons
 
 ## 🚀 Getting Started
 
-1. Clone the repository
-2. Open `index.html` in a modern web browser
-3. Or deploy to a web server
+### Installation
+1. Clone the repository or download the files
+2. Open `index.html` in your web browser
+3. Start adding tasks!
 
-## 🌐 Browser Support
-
+### Browser Support
 - Chrome 90+
 - Firefox 88+
 - Safari 14+
 - Edge 90+
+- Mobile browsers (iOS Safari, Chrome Mobile)
 
-## 📱 PWA Features
+## 💻 Usage
 
-- Progressive Web App ready
-- Installable on mobile devices
-- Offline capability ready
-- Fast loading with lazy loading images
+### Adding a Task
+1. Type your task in the input field
+2. Press Enter or click the "Add" button
+3. Task appears in the list
 
-## ♿ Accessibility
+### Completing a Task
+1. Click the checkbox next to the task
+2. Task is marked as complete
+3. Visual styling changes to indicate completion
 
-- WCAG 2.1 compliant
-- Semantic HTML structure
-- ARIA labels where needed
-- Keyboard navigation support
-- High contrast text
+### Deleting a Task
+1. Hover over a task
+2. Click the delete button (trash icon)
+3. Confirm deletion
 
-## 🔍 SEO
+### Filtering Tasks
+1. Click "All" to see all tasks
+2. Click "Active" to see pending tasks
+3. Click "Completed" to see finished tasks
 
-- Meta descriptions
-- Semantic HTML tags
-- Alt text for images
-- Structured data ready
-- Fast page load optimization
+### Clearing Completed
+1. Click the trash icon in the header
+2. Confirm to delete all completed tasks
 
-## 📞 Contact Information
+## 🛠️ Technical Details
 
-**Vettry E-bikes**
-- Address: Siruvani Main Road, Alandhurai, Coimbatore, 641101
-- Phone: 9994598837 / 8778242505
-- Email: Vettrykrishnomoorthy@gmail.com
-- Instagram: @vettrye.bikes
+### Local Storage API
+- Uses browser's `localStorage` API
+- Stores tasks as JSON string
+- Key: `taskflow_tasks`
+- Theme preference stored as `taskflow_theme`
 
-## 📝 Important Notes
+### Storage Limits
+- Typically 5-10 MB per domain
+- Sufficient for thousands of tasks
+- Graceful error handling if quota exceeded
 
-- No prices or offers displayed on the website
-- Focus on enquiry generation through Test Ride and WhatsApp
-- All product images use placeholder URLs (replace with actual images)
-- Premium luxury brand experience throughout
+### Data Structure
+```javascript
+{
+    id: number,              // Unique timestamp ID
+    text: string,            // Task description
+    completed: boolean,      // Completion status
+    priority: string,        // 'high' | 'medium' | 'low'
+    dueDate: string|null,    // ISO date string
+    createdAt: string,       // ISO timestamp
+    completedAt: string|null // ISO timestamp
+}
+```
+
+## 🔐 Security
+- XSS Protection: HTML escaping for all user input
+- Safe JSON parsing with error handling
+- Validates task data before storage
+- No external dependencies or APIs
+
+## 📊 Statistics
+- **Total Tasks**: Count of all tasks
+- **Completed**: Count of finished tasks
+- **Pending**: Count of active tasks
+- **Priority Breakdown**: Tasks by priority level
+
+## 🌓 Theme Support
+- **Light Mode** (default): Clean white interface
+- **Dark Mode**: Easy on the eyes for night use
+- **Persistent**: Theme preference saved to localStorage
+- **System Aware**: Can be extended for system preference detection
+
+## ⌨️ Keyboard Shortcuts
+
+| Shortcut | Action |
+|----------|--------|
+| `Ctrl/Cmd + Enter` | Add task (when input focused) |
+| `Escape` | Blur input field |
+| `Click Checkbox` | Toggle task completion |
+| `Click Delete` | Delete task (with confirmation) |
+
+## 🚀 Performance
+- Minimal JavaScript (~5KB compressed)
+- No external dependencies
+- Efficient DOM updates
+- Optimized CSS with minimal repaints
+- Fast local storage operations
+
+## 📱 Responsive Design
+- **Desktop** (1024px+): Full layout with all features
+- **Tablet** (768px-1023px): Optimized for touch
+- **Mobile** (<768px): Stacked layout, always-visible delete
+
+## 🎯 Future Enhancements
+- Due dates with notifications
+- Task categories/tags
+- Recurring tasks
+- Task notes/descriptions
+- Drag and drop reordering
+- Cloud sync with Firebase
+- Collaborative task lists
+- Mobile app (React Native)
+- Task analytics and insights
 
 ## 📄 License
 
-Copyright © 2026 Vettry E-bikes. All rights reserved.
+Open source - Feel free to use and modify for personal or commercial projects.
 
-## 🎯 Future Enhancements
+## 👨‍💻 Contributing
 
-- Integration with Framer Motion for advanced animations
-- Product comparison tool
-- Customer reviews section
-- Service center locator
-- Blog section
-- Video testimonials
-- AR product visualization
-- Live chat support
+Contributions are welcome! Feel free to:
+- Report bugs
+- Suggest features
+- Submit pull requests
+- Improve documentation
+
+## 📞 Support
+
+If you encounter any issues or have questions:
+1. Check the documentation
+2. Review the code comments
+3. Check browser console for errors
+4. Ensure browser supports Local Storage API
 
 ---
 
-**Authorized Ozotec Electric Vehicle Dealer**
+**Made with ❤️ by TaskFlow**
 
-Premium Electric Mobility for Everyday Life
+**Productive. Simple. Modern.**
